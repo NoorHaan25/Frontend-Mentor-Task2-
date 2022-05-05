@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/*variables*/
+:root{
+    --Violet:hsl(257, 40%, 49%) ;
+    --SoftMagenta: hsl(300, 69%, 71%) ;
+}
+/*******************************************************************************/
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/*******************************************************************************/
+body{
+    font-family: 'Poppins', 'Cairo', sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20PX;
+    padding-right: 20px;
+}
+/*******************************************************************************/
+.huddle{
+    background-image: url(../images/bg-desktop.svg);
+    background-color: var(--Violet);
+    
+}
+@media (min-width: 1200px){
+    .huddle{
+    height: 100vh;
+    }
+}
+.huddle .container{
+    padding-top: 20px;
+}
+.huddle .container .logo img{
+    width: 120px;
+    
+}
+.huddle .container .design{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    
+}
+@media (min-width: 1200px){
+    .huddle .container .design{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr); 
+        gap: 100px; 
+    }
+
+}
+.huddle .container .design img{
+    max-width: 100%;
+}
+@media (min-width: 1200px){
+    .huddle .container .design img{
+        width: 650px;
+    }
+}
+.huddle .container .design .text{
+    padding-top: 20px;
+    text-align: center;
+}
+@media (min-width: 1200px){
+    .huddle .container .design .text{
+        text-align: left;
+    }
+}
+.huddle .container .design .text h1{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+    
+}
+@media (min-width: 1200px){
+    .huddle .container .design .text h1{
+        font-size: 36px;
+    }
+}
+.huddle .container .design .text p{
+    color: white;
+    padding-top: 20px;
+    font-size: 13.3px;
+}
+@media (min-width: 1200px){
+    .huddle .container .design .text p{
+        font-size: 16.6px;
+    }
+}
+.huddle .container .design .text input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    font-size: 11px;
+    color: #777;
+    cursor: pointer;
+}
+@media (min-width: 1200px){
+    .huddle .container .design .text input{
+        padding: 20px 20px;
+        width: 180px;
+        font-size: 16px;
+    }
+}
+.huddle .container .design .text input:hover{
+    background-color: var(--SoftMagenta);
+}
+.huddle .icons{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.huddle .icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 17px;
+    color: wheat;
+    border-radius: 50%;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+}
+@media (min-width: 1200px){
+    .huddle .icons{
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        
+    }
+}
+.huddle .icons i:hover{
+    color: var(--SoftMagenta);;
+}
